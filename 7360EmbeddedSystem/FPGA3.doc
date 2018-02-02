@@ -1,0 +1,37 @@
+/*FPGA lab3
+* KK
+*/
+
+
+module lab3(input button1, input button2, input dip, input clk, output [1:0]led);
+
+reg [4:0] address_sig;
+wire [1:0] data_sig;
+
+ram	ram_inst (
+	.address ( address_sig ),
+	.clock ( clk),
+	.data ( data_sig ),
+	.wren ( dip ),
+	.q ( led )
+	);
+	
+always@(negedge button1 or negedge button2) //write and read, dip =1 write, =0 read
+	begin
+		if(!button2)
+		begin
+			
+			address_sig = address_sig + 1'b1;
+		end
+		else if(!button1)
+		begin
+			address_sig = 5'b00000;
+		end
+	end
+			
+
+assign data_sig[0] = address_sig[0];	//LSB
+assign data_sig[1] = address_sig[0]^address_sig[1]^address_sig[2]^address_sig[3]^address_sig[4];	
+
+	
+endmodule

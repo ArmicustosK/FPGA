@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Kyle/Desktop/FPGAP3/simulation/modelsim
+vram
+!s110 1458092387
+!i10b 1
+!s100 ?gY^_hOoDi;aZB9Ofi_:71
+I2Ih0l6::kC1cW<Q4C^SaX0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1457680043
+8C:/Users/Kyle/Desktop/FPGAP3/ram.v
+FC:/Users/Kyle/Desktop/FPGAP3/ram.v
+L0 40
+OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1458092387.000000
+!s107 C:/Users/Kyle/Desktop/FPGAP3/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kyle/Desktop/FPGAP3|C:/Users/Kyle/Desktop/FPGAP3/ram.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAP3

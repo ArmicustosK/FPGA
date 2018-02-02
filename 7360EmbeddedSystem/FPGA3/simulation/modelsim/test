@@ -1,0 +1,8 @@
+add wave clock
+add wave wren
+add wave address
+add wave data
+add wave q
+
+force clock 0 0, 1 50, -r 100
+force wren 1 0, 0 100, -r 200

@@ -1,0 +1,144 @@
+# do DE0_NANO_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying E:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/SPIPLL.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:56:31 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/SPIPLL.v 
+# -- Compiling module SPIPLL
+# 
+# Top level modules:
+# 	SPIPLL
+# End time: 19:56:31 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/DE0_NANO.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:56:31 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/DE0_NANO.v 
+# -- Compiling module DE0_NANO
+# 
+# Top level modules:
+# 	DE0_NANO
+# End time: 19:56:31 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ADC_CTRL.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:56:31 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ADC_CTRL.v 
+# -- Compiling module ADC_CTRL
+# 
+# Top level modules:
+# 	ADC_CTRL
+# End time: 19:56:31 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ram.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:56:31 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 19:56:32 on Apr 06,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db/spipll_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:56:32 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db/spipll_altpll.v 
+# -- Compiling module SPIPLL_altpll
+# 
+# Top level modules:
+# 	SPIPLL_altpll
+# End time: 19:56:32 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim +altera -l msim_transcript -do DE0_NANO_run_msim_rtl_verilog.do work.DE0_NANO -L altera_mf_ver
+# vsim "+altera" -l msim_transcript -do "DE0_NANO_run_msim_rtl_verilog.do" work.DE0_NANO -L altera_mf_ver 
+# Start time: 19:56:57 on Apr 06,2016
+# Loading work.DE0_NANO
+# Loading work.ram
+# Loading altera_mf_ver.altsyncram
+# Loading work.SPIPLL
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.ADC_CTRL
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# do DE0_NANO_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/SPIPLL.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:57:02 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/SPIPLL.v 
+# -- Compiling module SPIPLL
+# 
+# Top level modules:
+# 	SPIPLL
+# End time: 19:57:02 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/DE0_NANO.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:57:02 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/DE0_NANO.v 
+# -- Compiling module DE0_NANO
+# 
+# Top level modules:
+# 	DE0_NANO
+# End time: 19:57:02 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ADC_CTRL.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:57:02 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ADC_CTRL.v 
+# -- Compiling module ADC_CTRL
+# 
+# Top level modules:
+# 	ADC_CTRL
+# End time: 19:57:02 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ram.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:57:02 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 19:57:02 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db {C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db/spipll_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:57:03 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db" C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db/spipll_altpll.v 
+# -- Compiling module SPIPLL_altpll
+# 
+# Top level modules:
+# 	SPIPLL_altpll
+# End time: 19:57:03 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# End time: 20:28:00 on Apr 06,2016, Elapsed time: 0:31:03
+# Errors: 0, Warnings: 0

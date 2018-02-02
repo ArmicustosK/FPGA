@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/simulation/modelsim
+vADC_CTRL
+Z1 !s110 1459997822
+!i10b 1
+!s100 a=7k4<G9@b>:8cC<AX5V@2
+INAXzPIC[jHN]o:E8`bh8A0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1459994292
+8C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ADC_CTRL.v
+FC:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ADC_CTRL.v
+L0 1
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1459997822.000000
+!s107 C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ADC_CTRL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC|C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ADC_CTRL.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC
+n@a@d@c_@c@t@r@l
+vDE0_NANO
+R1
+!i10b 1
+!s100 l6bC^OgnQn5a7TE>[>Njh2
+I^SDDB<1j<5eN^h@5bifln1
+R2
+R0
+w1459997659
+8C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/DE0_NANO.v
+FC:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/DE0_NANO.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/DE0_NANO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC|C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/DE0_NANO.v|
+!i113 1
+R5
+R6
+n@d@e0_@n@a@n@o
+vram
+R1
+!i10b 1
+!s100 _P7n92VbJ=fS0lIj=6FT;2
+IOzCAJR;igDFU>?K]3kQa<1
+R2
+R0
+w1459922454
+8C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ram.v
+FC:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ram.v
+L0 40
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC|C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/ram.v|
+!i113 1
+R5
+R6
+vSPIPLL
+R1
+!i10b 1
+!s100 @ECi^1J2h2V_X^DSlR6mM0
+IUU7XD8J3i10h3T`Xz4Ze73
+R2
+R0
+w1459920623
+8C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/SPIPLL.v
+FC:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/SPIPLL.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/SPIPLL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC|C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/SPIPLL.v|
+!i113 1
+R5
+R6
+n@s@p@i@p@l@l
+vSPIPLL_altpll
+!s110 1459997823
+!i10b 1
+!s100 m3zB8:36zL:@mPgML`z?01
+ITN;^JTXJPECE9Y[2I0jWC2
+R2
+R0
+w1459920624
+8C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db/spipll_altpll.v
+FC:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db/spipll_altpll.v
+L0 30
+R3
+r1
+!s85 0
+31
+!s108 1459997823.000000
+!s107 C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db/spipll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db|C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db/spipll_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGAfinal/DE0_NANO_ADC/db
+n@s@p@i@p@l@l_altpll

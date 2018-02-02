@@ -1,0 +1,86 @@
+# do lab3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying E:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGA3 {C:/Users/Kyle/Desktop/FPGA3/ram.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:45:27 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGA3" C:/Users/Kyle/Desktop/FPGA3/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 15:45:27 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGA3 {C:/Users/Kyle/Desktop/FPGA3/lab3.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:45:27 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGA3" C:/Users/Kyle/Desktop/FPGA3/lab3.v 
+# -- Compiling module lab3
+# 
+# Top level modules:
+# 	lab3
+# End time: 15:45:27 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim +altera -l msim_transcript -do lab3_run_msim_rtl_verilog.do work.lab3 -L altera_mf_ver
+# vsim "+altera" -l msim_transcript -do "lab3_run_msim_rtl_verilog.do" work.lab3 -L altera_mf_ver 
+# Start time: 15:45:51 on Apr 06,2016
+# Loading work.lab3
+# Loading work.ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# do lab3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGA3 {C:/Users/Kyle/Desktop/FPGA3/ram.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:45:53 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGA3" C:/Users/Kyle/Desktop/FPGA3/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 15:45:53 on Apr 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Kyle/Desktop/FPGA3 {C:/Users/Kyle/Desktop/FPGA3/lab3.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:45:53 on Apr 06,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Kyle/Desktop/FPGA3" C:/Users/Kyle/Desktop/FPGA3/lab3.v 
+# -- Compiling module lab3
+# 
+# Top level modules:
+# 	lab3
+# End time: 15:45:54 on Apr 06,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+do test.do
+# Loading work.lab3
+# Loading work.ram
+# ** Error (suppressible): (vish-4008) Object 'button2' not found.
+# Error in macro ./test.do line 11
+# ** Error (suppressible): (vish-4008) Object 'button2' not found.
+# 
+#     while executing
+# "force button2 1 0, 0 50 -r 100"
+do test.do
+# End time: 15:47:32 on Apr 06,2016, Elapsed time: 0:01:41
+# Errors: 1, Warnings: 0

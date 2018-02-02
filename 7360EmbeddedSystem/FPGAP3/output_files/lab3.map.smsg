@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at lab3.v(32): always construct contains both blocking and non-blocking assignments File: C:/Users/Kyle/Desktop/FPGAP3/lab3.v Line: 32

@@ -1,0 +1,57 @@
+/*lab3
+ Kai Kang
+*/
+
+
+module lab3(input button1, input button2, input dip, input clk, output [1:0]led);
+ram	ram_inst (
+	.address ( address_sig ),
+	.clock ( clk),
+	.data ( data_sig ),
+	.wren ( dip ),
+	.q ( led )
+	);
+	
+
+//reg [4:0] address_sig;
+//wire [1:0] data_sig;
+reg [1:0] data_tmp;
+	
+/*always@(negedge button1 or negedge button2) //clear and increase address
+		begin
+			
+			if(!button1)
+			address_sig = 5'b00000;
+			
+			else if(!button2)
+			address_sig = address_sig + 1'b1;
+			
+		end
+*/		
+
+//assign data_sig[0] = address_sig[0];	//LSB
+//assign data_sig[1] = address_sig[0]^address_sig[1]^address_sig[2]^address_sig[3]^address_sig[4];	
+always@(negedge button1 or negedge button2) //write and read, dip =1 write, =0 read
+	begin
+		if(!button2)
+		begin
+			if (dip ) 
+			begin//write
+				data_tmp[0] = address_sig[0];	//LSB
+				data_tmp[1] = address_sig[0]^address_sig[1]^address_sig[2]^address_sig[3]^address_sig[4];	//XOR
+				
+			end
+			address_sig = address_sig + 1'b1;
+		end
+		if(!button1)
+		begin
+			address_sig = 5'b00000;
+		end
+	end
+			
+
+assign data_sig[0] = data_tmp[0];
+assign data_sig[1] = data_tmp[1];
+	
+		
+endmodule
