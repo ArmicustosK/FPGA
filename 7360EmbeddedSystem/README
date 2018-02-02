@@ -1,0 +1,9 @@
+# Embedded System
+FPGA: Altera FPGA chip, DE0-Nano FPGA board, Quartus Prime IDE, ModelSim-Altera, and Verilog HDL codes.
+Microprocessor: Atmel ATmega328P chip, Arduino UUNO board, Arduino IDE, and C sample codes.
+Host Personal Computer: Visual C++, Console Application versus MFC.
+Host-Microprocessor Interface:
+  1. Serial COM port communication: Termite terminal emulator and C++ codes.
+  2. Bluetooth Wireless communication: Sparkfun BlueSMiRF HID Modem (WRL-10938), USB Bluetooth Mini Module (WRL-09434).
+Microprocessor-FPGA Interface: synchronous versus asynchronous, handshaking versus strobing.
+The ADC128S022 chip on DE0-Nano board
