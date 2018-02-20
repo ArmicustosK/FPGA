@@ -1,5 +1,6 @@
 /* CEG 7360 Lab 1 
-   Yang Qu */
+*
+*/
 
 int ledPin = 13;
 int buttonPin = 2;
@@ -22,7 +23,7 @@ void loop()
     else if (reading == LOW)
     {
       digitalWrite(ledPin, LOW);
-      Serial.println("HelloWorld");
+      Serial.println("Ready!");
     }
     
 
